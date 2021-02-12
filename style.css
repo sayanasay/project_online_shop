@@ -399,3 +399,80 @@ footer {
   background: #F16D7F;
   color: #fff;
 }
+/*header на странице каталога*/
+.section__header{
+  margin-top: 75px;
+  padding: 60px 0;
+  background: #F8F3F4;
+}
+.header__info{
+  display: flex;
+  justify-content: space-between;
+}
+.header__info__name{
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+}
+.breadcrumb__link{
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-decoration: none;
+}
+.breadcrumb__link-active{
+  color: #F16D7F;
+  font-weight: 700;
+}
+.section__filter{
+  padding: 51px 0 35px;
+}
+.filter__heading{
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+.filter__btns{
+
+}
+.filter_btn{
+  color: #6F6E6E;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  margin-right: 28px;
+}
+.filter__icon{
+  margin-left: 10px;
+}
+.pages {
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 16px;
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  width: 284px;
+}
+.pages__links {
+  display: flex;
+  justify-content: space-between;
+}
+.pages__links::before {
+   font-family: "Font Awesome 5 Free";
+   content: '\f053';
+}
+.pages__links::after {
+   font-family: "Font Awesome 5 Free";
+   content: '\f054';
+}
+.page__link{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #c9c9c9;
+}
+.page__link-active{
+  color: #EF5B70;
+}

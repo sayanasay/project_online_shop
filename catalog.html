@@ -70,16 +70,95 @@
 <section class="section section__filter">
   <div class="section__wrapper">
     <div class="row">
-      <div class="col-6 col-md-6 col-xl-4">
-        <p class="filter__heading">FILTER <i class="fas fa-sort-amount-down filter__icon"></i></p>
+      <div class="col-6 col-md-6 col-xl-4 filter__column">
+        <details class="filter">
+          <summary class="filter__summary">
+            <span class="filter__heading">FILTER</span>
+            <i class="fas fa-sort-amount-down filter__icon"></i>
+          </summary>
+          <details class="filter__category">
+            <summary class="filter__category__summary">
+              CATEGORY
+            </summary>
+            <ul class="filter__category__details">
+              <li>Accessories</li>
+              <li>Bags</li>
+              <li>Denim</li>
+              <li>Hoodies & Sweatshirts</li>
+              <li>Jackets & Coats</li>
+              <li>Polos</li>
+              <li>Shirts</li>
+              <li>Shoes</li>
+              <li>Sweaters & Knits</li>
+              <li>T-Shirts</li>
+              <li>Tanks</li>
+            </ul>
+          </details>
+          <details class="filter__category">
+            <summary class="filter__category__summary">
+              BRAND
+            </summary>
+            <ul class="filter__category__details">
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+              <li>D</li>
+              <li>E</li>
+              <li>F</li>
+              <li>G</li>
+            </ul>
+          </details>
+          <details class="filter__category">
+            <summary class="filter__category__summary">
+              DESIGNER
+            </summary>
+            <ul class="filter__category__details">
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+              <li>D</li>
+              <li>E</li>
+              <li>F</li>
+              <li>G</li>
+            </ul>
+          </details>
+        </details>
       </div>
-      <div class="col-6 col-md-6 col-xl-8">
-        <div class="filter__btns">
-          <a class="filter_btn" href="">TRENDING NOW <i class="fas fa-chevron-down filter__icon"></i></a>
-          <a class="filter_btn" href="">SIZE <i class="fas fa-chevron-down filter__icon"></i></a>
-          <a class="filter_btn" href="">PRICE <i class="fas fa-chevron-down filter__icon"></i></a>
+      <div class="col-6 col-md-6 col-xl-8 filter__column__more">
+        <div class="filter__column">
+          <details class="filter">
+            <summary class="filter__summary">
+              <span class="filter__heading">TRENDING NOW</span>
+              <i class="fas fa-chevron-down filter__icon"></i>
+            </summary>
+            text
+          </details>
+        </div>
+        <div class="filter__column">
+          <details class="filter">
+            <summary class="filter__summary">
+              <span class="filter__heading">SIZE</span>
+              <i class="fas fa-chevron-down filter__icon"></i>
+            </summary>
+              <div class="filter__details__checkbox">
+                <label class="checkbox"><input type="checkbox"><span>XS</span></label><br>
+                <label class="checkbox"><input type="checkbox"><span>S</span></label><br>
+                <label class="checkbox"><input type="checkbox"><span>M</span></label><br>
+                <label class="checkbox"><input type="checkbox"><span>L</span></label><br>
+              </div>
+          </details>
+        </div>
+        <div class="filter__column">
+          <details class="filter">
+            <summary class="filter__summary">
+              <span class="filter__heading">PRICE</span>
+              <i class="fas fa-chevron-down filter__icon"></i>
+            </summary>
+            text
+          </details>
         </div>
       </div>
+    </div>
   </div>
 </section>
 <section class="section section__featured">
@@ -251,6 +330,7 @@
     <div class="row">
       <div class="pages">
         <div class="pages__links">
+          <a href=""><i class="fas fa-chevron-left page__links__arrow"></i></a>
           <a href="" class="page__link page__link-active">1</a>
           <a href="" class="page__link">2</a>
           <a href="" class="page__link">3</a>
@@ -259,6 +339,7 @@
           <a href="" class="page__link">6</a>
           ...
           <a href="" class="page__link">20</a>
+          <a href=""><i class="fas fa-chevron-right page__links__arrow"></i></a>
         </div>
       </div>
     </div>

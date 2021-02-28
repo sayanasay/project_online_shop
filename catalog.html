@@ -9,7 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Main</title>
+  <title>Catalog</title>
 </head>
 <body>
   <header class="navbar">
@@ -71,7 +71,7 @@
   <div class="section__wrapper">
     <div class="row">
       <div class="col-6 col-md-6 col-xl-4 filter__column">
-        <details class="filter">
+        <details class="filter filter__main">
           <summary class="filter__summary">
             <span class="filter__heading">FILTER</span>
             <i class="fas fa-sort-amount-down filter__icon"></i>
@@ -126,6 +126,10 @@
       </div>
       <div class="col-6 col-md-6 col-xl-8 filter__column__more">
         <div class="filter__column">
+          <div class="filter__fakesummary">
+            <span class="filter__heading">TRENDING NOW</span>
+            <i class="fas fa-chevron-down filter__icon"></i>
+          </div>
           <details class="filter">
             <summary class="filter__summary">
               <span class="filter__heading">TRENDING NOW</span>
@@ -135,6 +139,10 @@
           </details>
         </div>
         <div class="filter__column">
+          <div class="filter__fakesummary">
+            <span class="filter__heading">SIZE</span>
+            <i class="fas fa-chevron-down filter__icon"></i>
+          </div>
           <details class="filter">
             <summary class="filter__summary">
               <span class="filter__heading">SIZE</span>
@@ -149,6 +157,10 @@
           </details>
         </div>
         <div class="filter__column">
+          <div class="filter__fakesummary">
+            <span class="filter__heading">PRICE</span>
+            <i class="fas fa-chevron-down filter__icon"></i>
+          </div>
           <details class="filter">
             <summary class="filter__summary">
               <span class="filter__heading">PRICE</span>

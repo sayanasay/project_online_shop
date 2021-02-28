@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+  <title>Cart</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__wrapper">
+      <div class="navbar__icons navbar__icons-left">
+        <div class="navbar__icon"><img src="img/logo.png" alt="logo"></div>
+        <div class="navbar__icon"><img src="img/search.svg" alt="search"></div>
+      </div>
+      <div class="navbar__icons navbar__icons-right">
+        <div class="navbar__icon burger"><img src="img/burger.svg" alt="menu"></div>
+        <div class="navbar__icon"><img src="img/user.svg" alt="user"></div>
+        <div class="navbar__icon"><img src="img/cart.svg" alt="cart"></div>
+      </div>
+    </div>
+  </header>
+  <section class="overlay">
+    <div class="menu">
+      <h3 class="menu__heading">Menu</h3>
+      <h4 class="menu__heading__items">MAN</h4>
+      <ul class="menu__items">
+        <li>Accessories</li>
+        <li>Bags</li>
+        <li>Denim</li>
+        <li>T-Shirts</li>
+      </ul>
+      <h4 class="menu__heading__items">WOMAN</h4>
+      <ul class="menu__items">
+        <li>Accessories</li>
+        <li>Jackets & Coats</li>
+        <li>Polos</li>
+        <li>T-Shirts</li>
+        <li>Shirts</li>
+      </ul>
+      <h4 class="menu__heading__items">KIDS</h4>
+      <ul class="menu__items">
+        <li>Accessories</li>
+        <li>Jackets & Coats</li>
+        <li>Polos</li>
+        <li>T-Shirts</li>
+        <li>Shirts</li>
+        <li>Bags</li>
+      </ul>
+      <button class="close">X</button>
+    </div>
+</section>
+<section class="section section__header">
+  <div class="section__wrapper">
+    <div class="header__info">
+      <p class="header__info__name">SHOPPING CART</p>
+    </div>
+  </div>
+</section>
+<section class="section section__checkout">
+  <div class="section__wrapper">
+    <div class="checkout__products">
+      <div class="checkout__product">
+        <img class="checkout__product__image" src="img/item_8.jpg">
+        <div class="checkout__product__details">
+          <i class="fas fa-times checkout__product__details__cross"></i>
+          <p class="checkout__product__details__heading">MANGO  PEOPLE  T-SHIRT</p>
+          <p class="checkout__product__details__info">Price: <span class="checkout__product__details__price">$300</span></p>
+          <p class="checkout__product__details__info">Color: Red</p>
+          <p class="checkout__product__details__info">Size: Xl	</p>
+          <p class="checkout__product__details__info">Quantity:<input type="text" class="checkout__product__quantity" name="quantity" value="2"></p>
+        </div>
+      </div>
+      <div class="checkout__product">
+        <img class="checkout__product__image" src="img/item_7.jpg">
+        <div class="checkout__product__details">
+          <i class="fas fa-times checkout__product__details__cross"></i>
+          <p class="checkout__product__details__heading">MANGO  PEOPLE  T-SHIRT</p>
+          <p class="checkout__product__details__info">Price: <span class="checkout__product__details__price">$300</span></p>
+          <p class="checkout__product__details__info">Color: Red</p>
+          <p class="checkout__product__details__info">Size: Xl	</p>
+          <p class="checkout__product__details__info">Quantity:<input type="text" class="checkout__product__quantity" name="quantity" value="2"></p>
+        </div>
+      </div>
+      <div class="checkout__cart__buttons">
+        <button class="checkout__cart__button">CLEAR SHOPPING CART</button>
+        <button class="checkout__cart__button">CONTINUE SHOPPING</button>
+      </div>
+    </div>
+    <div class="checkout__form">
+      <div class="checkout__form__details">
+        <p class="checkout__form__address">SHIPPING ADRESS</p>
+        <input type="text" class="checkout__form__address__input" name="country" placeholder="Bangladesh">
+        <input type="text" class="checkout__form__address__input" name="state" placeholder="State">
+        <input type="text" class="checkout__form__address__input" name="postcode" placeholder="Postcode / Zip">
+        <input type="button" class="checkout__form__address__button" value="GET A QUOTE">
+      </div>
+      <div class="checkout__form__total">
+        <p class="checkout__form__total_subtotal">SUB TOTAL<span>$900</span></p>
+        <p class="checkout__form__total_grantotal">GRAND TOTAL<span>$900</span></p>
+        <hr>
+        <input type="button" class="checkout__form__total__button" value="PROCEED TO CHECKOUT">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section__subscription">
+  <div class="section__wrapper">
+	<div class="subscription__blocks">
+		<div class="subscription__block-left">
+			<img src="img/face.png">
+			<p class="subscription__quote__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum“</i></p>
+		</div>
+		<div class="subscription__block-right">
+			<p class="subscription__subtitle"><span class="subscription__subtitle subscription__subtitle-bold">SUBSCRIBE</span><br>FOR OUR NEWLETTER AND PROMOTION</p>
+			<form class="subscription__form">
+				<input type="email" placeholder="Enter Your Email" class="subscription__form__input">
+				<button type="submit" class="subscription__form__button">Subscribe</button>
+			</form>
+		</div>
+	</div>
+  </div>
+</section>
+<footer>
+	<div class="section__wrapper">
+		<div class="footer__blocks">
+			<p class="footer__block__info">
+				© 2021  Brand  All Rights Reserved.
+			</p>
+			<div class="footer__block__links">
+				<a class="footer__social__link" href=""><i class="fab fa-facebook-f"></i></a>
+				<a class="footer__social__link" href=""><i class="fab fa-instagram"></i></a>
+				<a class="footer__social__link" href=""><i class="fab fa-pinterest-p"></i></a>
+				<a class="footer__social__link" href=""><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

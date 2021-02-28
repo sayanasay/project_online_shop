@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="overlay.scss">
-  <title>Main</title>
+  <title>Product</title>
 </head>
 <body>
   <header class="navbar">
@@ -98,9 +98,50 @@
         <p class="section__description__price">$561</p>
         <hr class="section__description__hr">
         <div class="filter__btns">
-          <a class="filter_btn" href="">CHOOSE COLOR <i class="fas fa-chevron-down filter__icon"></i></a>
-          <a class="filter_btn" href="">CHOOSE SIZE <i class="fas fa-chevron-down filter__icon"></i></a>
-          <a class="filter_btn" href="">QUANTITY <i class="fas fa-chevron-down filter__icon"></i></a>
+          <div class="filter__column">
+            <div class="filter__fakesummary">
+              <span class="filter__heading">CHOOSE COLOR</span>
+              <i class="fas fa-chevron-down filter__icon"></i>
+            </div>
+            <details class="filter">
+              <summary class="filter__summary">
+                <span class="filter__heading">CHOOSE COLOR</span>
+                <i class="fas fa-chevron-down filter__icon"></i>
+              </summary>
+              text
+            </details>
+          </div>
+          <div class="filter__column">
+            <div class="filter__fakesummary">
+              <span class="filter__heading">CHOOSE SIZE</span>
+              <i class="fas fa-chevron-down filter__icon"></i>
+            </div>
+            <details class="filter">
+              <summary class="filter__summary">
+                <span class="filter__heading">CHOOSE SIZE</span>
+                <i class="fas fa-chevron-down filter__icon"></i>
+              </summary>
+                <div class="filter__details__checkbox">
+                  <label class="checkbox"><input type="checkbox"><span>XS</span></label><br>
+                  <label class="checkbox"><input type="checkbox"><span>S</span></label><br>
+                  <label class="checkbox"><input type="checkbox"><span>M</span></label><br>
+                  <label class="checkbox"><input type="checkbox"><span>L</span></label><br>
+                </div>
+            </details>
+          </div>
+          <div class="filter__column">
+            <div class="filter__fakesummary">
+              <span class="filter__heading">QUANTITY</span>
+              <i class="fas fa-chevron-down filter__icon"></i>
+            </div>
+            <details class="filter">
+              <summary class="filter__summary">
+                <span class="filter__heading">QUANTITY</span>
+                <i class="fas fa-chevron-down filter__icon"></i>
+              </summary>
+              text
+            </details>
+          </div>
         </div>
         <a class="cart__button" href="">Add to Cart</a>
       </div>

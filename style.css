@@ -40,6 +40,7 @@ body{
 }
 .navbar__icon{
   margin: auto 17px;
+  cursor: pointer;
 }
 .navbar__icons:first-child{
   margin-left: -17px;
@@ -55,6 +56,17 @@ section{
   background: #F1E4E6;
   margin-top: 75px;
 }
+.section.section__intro .section__wrapper {
+  display: flex;
+}
+.section__intro__image {
+  background: url(img/main-man-new.png) no-repeat;
+  height: 764px;
+  width: 40%;
+  flex-grow: 1;
+  background-size: contain;
+}
+
 .heading {
   font-style: normal;
   font-weight: 700;
@@ -70,11 +82,7 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 764px;
-  align-items: flex-end;
-  margin-right: 60px;
-  background: #F1E4E6 url(img/main-man.png) no-repeat;
-  background-position: -20%;
+  flex-grow: 1;
 }
 .heading-big{
   font-size: 48px;
@@ -165,10 +173,9 @@ section{
 .card {
   width: 100%;
   max-width: 360px;
-  margin: 0;
   border-radius: 0;
   border: none;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
 }
 .card__picture{
   width: 100%;
@@ -208,9 +215,6 @@ section{
 .card__btn:hover{
   border-color: #f16d7f;
   background-color: #f16d7f;
-}
-.row{
-  margin-bottom: 30px;
 }
 h2{
   font-style: normal;
@@ -306,7 +310,6 @@ p.important__item__text {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-	flex-wrap: wrap;
 }
 .subscription__block-left {
   text-align: center;
@@ -320,9 +323,6 @@ p.subscription__quote__text {
   line-height: 24px;
   text-align: center;
   color: #222224;
-}
-.subscription__block-right{
-  margin-right: 100px;
 }
 .subscription__subtitle {
   font-style: normal;
@@ -445,6 +445,13 @@ footer {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
+}
+.filter__column__more .filter__heading {
+  font-weight: normal;
+  color: #6F6E6E;
+}
+.filter__column__more .filter__icon{
+  color: #6F6E6E;
 }
 .filter__icon{
   margin-left: 10px;
@@ -637,6 +644,7 @@ section.section.section__description .section__wrapper {
   width: 641px;
   color: #a0a0a0;
   margin-bottom: 65px;
+  max-width: 100%;
 }
 .cart__button{
   margin-top: 48px;
@@ -866,6 +874,8 @@ span.checkout__product__details__price {
   color: #fff;
 }
 .checkout__form {
+  display: flex;
+  flex-direction: column;
   margin-left: 128px;
 }
 .checkout__product__quantity{

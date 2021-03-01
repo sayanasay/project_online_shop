@@ -1,0 +1,13 @@
+@media screen and (max-width:768px){
+   .important__items{
+       flex-direction: column;
+   }  
+}
+@media screen and (max-width:480px){
+    .overlay .menu{
+        width: 100%;
+    }
+    .hide-mobile{
+        display: none;
+    }
+}

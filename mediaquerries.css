@@ -1,7 +1,83 @@
 @media screen and (max-width:768px){
-   .important__items{
+    .section__wrapper {
+        padding: 0 16px;
+    }
+    .navbar__wrapper{
+        padding: 0 32px;
+    }
+    .important__items{
        flex-direction: column;
-   }  
+   }
+   .heading {
+        font-size: 24px;
+        line-height: 29px;
+	}
+	.heading-big {
+        font-size: 44px;
+        line-height: 53px;
+	}
+	.section__intro {
+        height: 370px;
+	}
+	.section__intro__image {
+        height: 370px;
+	    background-position-x: 60px;
+	}
+    .section__categories__line {
+        gap: 20px;
+    }
+    .section__category {
+        width: 232px;
+        height: 167px;
+    }
+    .section__category-accesories {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .subscription__blocks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscription__block-left {
+        margin-bottom: 48px;
+    }
+    .filter__column__more {
+        justify-content: flex-end;
+    }
+    .filter__column__more .filter__column {
+        margin-left: 28px;
+        margin-right: 0;
+    }
+    section.section.section__checkout .section__wrapper {
+        flex-direction: column;
+    }
+    .checkout__products {
+        margin-bottom: 64px;
+    }
+    .checkout__cart__buttons {
+        justify-content: space-around;
+    }
+    .checkout__form {
+        margin-left: 0;;
+    }
+}
+@media screen and (max-width:768px) and (min-width:480px){
+    .checkout__form {
+        flex-direction: row;
+    }
+    .checkout__form__total{
+        margin-left: 16px;
+    }
+}
+@media screen and (max-width:600px){
+	.section__intro__image {
+    display: none;
+	}
+	.section.section__intro .section__wrapper {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+	}
 }
 @media screen and (max-width:480px){
     .overlay .menu{
@@ -9,5 +85,83 @@
     }
     .hide-mobile{
         display: none;
+    }
+    .heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .heading-big {
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .section__categories__line{
+        flex-direction: column;
+    }
+    .section__category{
+        height: 247px;
+        width: 100%;
+    }
+    .section__category-women, .section__category-kids, .section__category-men, .section__category-accesories{
+        background-size: cover;
+    }
+    .section__category.section__category-accesories {
+        height: 111px;
+    }
+    .section__category-women:hover, .section__category-kids:hover, .section__category-men:hover, .section__category-accesories:hover {
+        background-size: auto 120%;
+    }
+    .section__categories {
+        margin-bottom: 65px;
+    }
+    p.subscription__quote__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    p.subscription__subtitle {
+        font-size: 14px;
+    }
+    .subscription__form__input{
+        width: 220px;
+    }
+    .subscription__form__button{
+        width: 90px;
+    }
+    .footer__blocks {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer__block__links {
+        margin-bottom: 40px;
+    }
+    .footer__block__info{
+        margin-bottom: 0;
+    }
+    .navbar__wrapper{
+        padding: 0 16px;
+    }
+    .filter__main .filter__heading{
+        display: none;
+    }
+    .filter__main .filter__icon {
+        margin-left: 0;
+    }
+    .filter__heading{
+        font-size: 12px;
+    }
+    .filter__column__more .filter__icon {
+        font-size: 12px;
+    }
+    .filter__column__more .filter__column {
+        margin-left: 23px;
+    }
+    .filter__column__more .filter__column:first-child {
+        margin: 0;
+    }
+    .header__info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__info__name {
+        margin-bottom: 32px;
     }
 }

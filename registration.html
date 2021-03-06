@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="mediaquerries.css">
-  <title>Cart</title>
+  <title>Registration</title>
 </head>
 <body>
   <header class="navbar">
@@ -59,53 +59,38 @@
 <section class="section section__header">
   <div class="section__wrapper">
     <div class="header__info">
-      <p class="header__info__name">SHOPPING CART</p>
+      <p class="header__info__name">REGISTRATION</p>
     </div>
   </div>
 </section>
-<section class="section section__checkout">
+<section class="section section__registration">
   <div class="section__wrapper">
-    <div class="checkout__products">
-      <div class="checkout__product">
-        <div class="checkout__product__image checkout__product__image-1"></div>
-        <div class="checkout__product__details">
-          <i class="fas fa-times checkout__product__details__cross"></i>
-          <p class="checkout__product__details__heading">MANGO  PEOPLE  T-SHIRT</p>
-          <p class="checkout__product__details__info">Price: <span class="checkout__product__details__price">$300</span></p>
-          <p class="checkout__product__details__info">Color: Red</p>
-          <p class="checkout__product__details__info">Size: Xl	</p>
-          <p class="checkout__product__details__info">Quantity:<input type="text" class="checkout__product__quantity" name="quantity" value="2"></p>
+    <div class="registration__block">
+      <div class="registration__form">
+        <p class="registration__form__heading">Your Name</p>
+        <input type="text" class="checkout__form__address__input" name="first_name" placeholder="First Name">
+        <input type="text" class="checkout__form__address__input" name="last_name" placeholder="Last Name">
+        <div class="registration__form__radio">
+          <label for="male" class="registration__form__radio__label"><input type="radio" class="" name="sex" id="male" value="male"><span>Male</span></label>
+          <label for="female" class="registration__form__radio__label"><input type="radio" class="" name="sex" id="female" value="female"><span>Female</span></label>
+          <label for="other" class="registration__form__radio__label"><input type="radio" class="" name="sex" id="other" value="other"><span>Other</span></label>
         </div>
+        <p class="registration__form__heading">Login details</p>
+        <input type="text" class="checkout__form__address__input" name="email" placeholder="Email">
+        <input type="text" class="checkout__form__address__input" name="password" placeholder="Password">
+        <p class="registration_form_text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+        <button type="submit" class="registration__form__button" value="JOIN NOW"><span class="registration__form__button__text">JOIN NOW</span></button>
       </div>
-      <div class="checkout__product">
-        <div class="checkout__product__image checkout__product__image-2"></div>
-        <div class="checkout__product__details">
-          <i class="fas fa-times checkout__product__details__cross"></i>
-          <p class="checkout__product__details__heading">MANGO  PEOPLE  T-SHIRT</p>
-          <p class="checkout__product__details__info">Price: <span class="checkout__product__details__price">$300</span></p>
-          <p class="checkout__product__details__info">Color: Red</p>
-          <p class="checkout__product__details__info">Size: Xl	</p>
-          <p class="checkout__product__details__info">Quantity:<input type="text" class="checkout__product__quantity" name="quantity" value="2"></p>
-        </div>
-      </div>
-      <div class="checkout__cart__buttons">
-        <button class="checkout__cart__button">CLEAR SHOPPING CART</button>
-        <button class="checkout__cart__button">CONTINUE SHOPPING</button>
-      </div>
-    </div>
-    <div class="checkout__form">
-      <div class="checkout__form__details">
-        <p class="checkout__form__address">SHIPPING ADRESS</p>
-        <input type="text" class="checkout__form__address__input" name="country" placeholder="Bangladesh">
-        <input type="text" class="checkout__form__address__input" name="state" placeholder="State">
-        <input type="text" class="checkout__form__address__input" name="postcode" placeholder="Postcode / Zip">
-        <input type="button" class="checkout__form__address__button" value="GET A QUOTE">
-      </div>
-      <div class="checkout__form__total">
-        <p class="checkout__form__total_subtotal">SUB TOTAL<span>$900</span></p>
-        <p class="checkout__form__total_grantotal">GRAND TOTAL<span>$900</span></p>
-        <hr>
-        <input type="button" class="checkout__form__total__button" value="PROCEED TO CHECKOUT">
+      <div class="loyalty">
+        <h2 class="loyalty__heading">LOYALTY HAS ITS PERKS</h2>
+        <p class="loyalty__text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+        <ul class="loyalty__list">
+          <li>15% off welcome offer</li>
+          <li>Free shipping, returns and exchanges on all orders</li>
+          <li>$10 off a purchase on your birthday</li>
+          <li>Early access to products</li>
+          <li>Exclusive offers & rewards</li>
+        </ul>
       </div>
     </div>
   </div>
